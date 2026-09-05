@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && (cd out && git init -b gh-pages && git add -A && git commit -m 'deploy' && git remote add origin git@github.com:daredevilg7/asuskada.git && git push origin gh-pages --force && rm -rf .git)"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
